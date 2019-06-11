@@ -1,0 +1,115 @@
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button, input[type='submit'] {
+  background: purple;
+  color: white;
+  height: 52px;
+  min-width: 120px;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 20px;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
+  outline: 0;
+  letter-spacing: .04em;
+  transition: all .15s ease;
+  cursor: pointer;
+}
+
+.btn-sm {
+  height: 26px;
+  min-width: 60px;
+  font-size: 11px;
+  padding: 8px 10px;
+}
+
+input[type='text'], input[type='number'] {
+  border: none;
+  border-bottom: 2px solid purple;
+  width: 100%;
+  font-size: 15px;
+  height: 32px;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-style: italic;
+}
+
+.form-control {
+  margin-bottom: 15px;  
+}
+
+.form-control label {
+  display: block;
+  padding-bottom: 5 px;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+  outline: none;
+}
+
+.mt {
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+
+.jumbo {
+  margin-top: 5px;
+  margin-bottom: 45px;
+  background-color: lightpink;
+  padding: 30px;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.jumbo strong {
+  font-size: 20px;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+}
+
+.form-header button {
+  margin-left: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+  
+button:hover:not(:disabled),
+input[type='submit']:hover:not(:disabled) {
+  box-shadow: 0 3px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.1);
+  transform: translateY(1px);
+}
+
+button:disabled, input[type='submit']:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+

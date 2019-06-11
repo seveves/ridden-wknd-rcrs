@@ -1,0 +1,78 @@
+.next-stage {
+  display: flex;
+  margin-top: 55px;
+  padding-top: 15px;
+  border-top: 2px solid purple;
+}
+
+.next-stage button {
+  margin-left: auto;
+}
+
+.rider-item-group {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.rider-item {
+  display: flex;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.rider-item::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+    z-index: -1;
+}
+
+.rider-item.idle::before {
+  background-color: gray;
+  opacity: .3;
+}
+
+.rider-item.waitforstart::before {
+  background-color: lightpink;
+  animation: pulse 2s infinite;
+}
+
+.rider-item.letsstart::before {
+  background-color: lightgreen;
+}
+
+.rider-item.ontrack::before {
+  background-color: lightgreen;
+  animation: pulse 2s infinite;
+}
+
+.rider-item.done {
+  opacity: .5;
+}
+
+.rider-state {
+  margin-left: auto;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.rider-actions {
+  margin-left: auto;
+  display: flex;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}

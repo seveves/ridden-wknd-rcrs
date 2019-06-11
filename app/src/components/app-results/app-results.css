@@ -1,0 +1,14 @@
+.result {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.result .rider-time {
+}
+
+.result .rider-offset {
+  margin-left: auto;
+  color: purple;
+  padding-right: 30px;
+}

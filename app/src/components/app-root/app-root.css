@@ -1,0 +1,48 @@
+header {
+  background: deeppink;
+  color: white;
+  height: 56px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.brand, .brand:visited, .brand:active {
+  text-decoration: none;
+  color: white;
+}
+
+.brand:hover {
+  text-decoration: underline;
+}
+
+footer .container,
+header .container {
+  max-width: 38rem;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+header .container h1,
+header .container h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+header .container h2 {
+  margin-left: auto;
+}
+
+footer .container p {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+main {
+  max-width: 38rem;
+  padding: 2rem;
+  margin: auto;
+}
